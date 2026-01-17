@@ -1,0 +1,8 @@
+C:\Users\Muhammad Umer\source\repos\university Project\university Project\bin\Debug\university Project.exe.config
+C:\Users\Muhammad Umer\source\repos\university Project\university Project\bin\Debug\university Project.exe
+C:\Users\Muhammad Umer\source\repos\university Project\university Project\bin\Debug\university Project.pdb
+C:\Users\Muhammad Umer\source\repos\university Project\university Project\obj\Debug\university Project.csproj.AssemblyReference.cache
+C:\Users\Muhammad Umer\source\repos\university Project\university Project\obj\Debug\university Project.csproj.CoreCompileInputs.cache
+C:\Users\Muhammad Umer\source\repos\university Project\university Project\obj\Debug\university Project.exe
+C:\Users\Muhammad Umer\source\repos\university Project\university Project\obj\Debug\university Project.pdb
+C:\Users\Muhammad Umer\source\repos\university Project\university Project\obj\Debug\university Project.exe.config

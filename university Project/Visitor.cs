@@ -1,0 +1,76 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace university_Project
+{
+    internal class Visitor
+    {
+        public void VisitorMenu()
+        {
+            string ask = "Visitor Menu";
+            string option1 = "View Student Information";
+            string option2 = "view Course Catalog";
+            string option3 = "about faculty";
+            string option4 = "Exam Time Table";
+            string option5 = "Results";
+            string backcmd = "Back to MainMenu";
+            bool exit = false;
+
+            while (!exit)
+            {
+                Console.WriteLine(ask);
+                Console.WriteLine($"1) {option1}");
+                Console.WriteLine($"2) {option2}");
+                Console.WriteLine($"3) {option3}");
+                Console.WriteLine($"4) {option4}");
+                Console.WriteLine($"5) {option5}");
+                Console.WriteLine($"6) {backcmd}");
+                int option = Convert.ToInt32(Console.ReadLine());
+                if(option > 0 && option < 7)
+                {
+                    switch (option)
+                    {
+                        case 1:
+                            Console.WriteLine("Viewing Student Information...");
+                            Console.WriteLine("press 0 for back to student menu");
+                           
+
+                            break;
+                        case 2:
+                            Console.WriteLine("Viewing Course Catalog...");
+                            // Add logic to view course catalog
+                            break;
+                        case 3:
+                            Console.WriteLine("About Faculty...");
+                            // Add logic to display faculty information
+                            break;
+                        case 4:
+                            Console.WriteLine("Viewing Exam Time Table...");
+                            // Add logic to view exam time table
+                            break;
+                        case 5:
+                            Console.WriteLine("Viewing Results...");
+                            // Add logic to view results
+                            break;
+                        case 6:
+                            exit = true;
+                            break;
+                        default:
+                            Console.WriteLine("Invalid option. Please try again.");
+                            break;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Please enter a valid number corresponding to your option.");
+                }
+            }
+
+
+
+        }
+    }
+}
