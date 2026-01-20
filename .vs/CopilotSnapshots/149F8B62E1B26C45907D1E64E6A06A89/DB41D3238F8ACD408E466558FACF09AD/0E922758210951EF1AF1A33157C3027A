@@ -1,0 +1,65 @@
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml.Linq;
+
+namespace university_Project
+{
+    internal class Program
+
+    {
+
+        public static string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "st.txt");
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Welcome to University Management System!");
+            bool exit = false;
+            while (!exit)
+            {
+                Console.WriteLine("\nSelect Role:");
+                Console.WriteLine("1) Admin");
+                Console.WriteLine("2) Visitor");
+                Console.WriteLine("3) Exit");
+                Console.Write("Enter option: ");
+                try
+                {
+                    int role = int.Parse(Console.ReadLine());
+                    switch (role)
+                    {
+                        case 1:
+                            Console.Write("Enter Admin Name: ");
+                            string adminName = Console.ReadLine();
+                            Admin admin = new Admin(adminName);
+                            admin.ShowMenu();
+                            break;
+                        case 2:
+                            Console.Write("Enter Visitor Name: ");
+                            string visitorName = Console.ReadLine();
+                            Visitor visitor = new Visitor(visitorName);
+                            visitor.ShowMenu();
+                            break;
+                        case 3:
+                            exit = true;
+                            break;
+                        default:
+                            Console.WriteLine("Invalid option.");
+                            break;
+                    }
+                }
+                catch
+                {
+                    Console.WriteLine("Please enter a valid number.");
+                }
+            }
+            Console.WriteLine("Thank you for using University Management System!");
+        }
+    }
+    }
+
+
+
+

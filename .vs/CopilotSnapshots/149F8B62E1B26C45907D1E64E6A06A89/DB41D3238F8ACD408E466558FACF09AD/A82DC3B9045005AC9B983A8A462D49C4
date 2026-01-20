@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace university_Project
 {
-
     internal class Visitor
     {
-       
-     
+        List<Course> courses = new List<Course>()
+    {
+        new Course(){ courseCode="CS101", courseName="Programming", semester="1", credits="3"},
+        new Course(){ courseCode="CS102", courseName="OOP", semester="2", credits="4"},
+        new Course(){ courseCode="CS201", courseName="DBMS", semester="3", credits="3"}
+    };
         public void VisitorMenu()
         {
             string ask = "Visitor Menu";
@@ -24,7 +27,6 @@ namespace university_Project
 
             while (!exit)
             {
-                Console.Clear();
                 Console.WriteLine(ask);
                 Console.WriteLine($"1) {option1}");
                 Console.WriteLine($"2) {option2}");
@@ -39,28 +41,20 @@ namespace university_Project
                     {
                         case 1:
                             Console.WriteLine("Viewing Student Information...");
-                            foreach (var s in Database.students)
-                            {
-                                s.DisplayStudentInfo();
-                            }
-                            Console.ReadKey();
+                            Console.WriteLine("press 0 for back to student menu");
+                           
 
                             break;
                         case 2:
                             Console.WriteLine("Viewing Course Catalog...");
-                            foreach (var course in Database.courses)
+                            foreach(Course course in courses)
                             {
                                 course.displayCourseInfo();
                             }
-                            Console.ReadKey();
                             break;
                         case 3:
                             Console.WriteLine("About Faculty...");
-                            foreach (var f in Database.faculty)
-                            {
-                                f.displayFacultyinfo();
-                            }
-                            Console.ReadKey();
+                            // Add logic to display faculty information
                             break;
                         case 4:
                             Console.WriteLine("Viewing Exam Time Table...");

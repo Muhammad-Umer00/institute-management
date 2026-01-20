@@ -43,13 +43,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.cs" />
+    <Compile Include="Attendence.cs" />
     <Compile Include="Course.cs" />
+    <Compile Include="Database.cs" />
     <Compile Include="Department.cs" />
+    <Compile Include="Examination.cs" />
+    <Compile Include="Facultymember.cs" />
     <Compile Include="ICrud.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Program2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="student.cs" />
+    <Compile Include="Result.cs" />
+    <Compile Include="Semester.cs" />
+    <Compile Include="Student.cs" />
     <Compile Include="University.cs" />
     <Compile Include="Visitor.cs" />
   </ItemGroup>

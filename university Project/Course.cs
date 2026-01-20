@@ -14,9 +14,9 @@ namespace university_Project
         public string credits { get; set; }
         public void displayCourseInfo()
         {
-            Console.WriteLine(courseName + " " + courseCode);
-            Console.WriteLine(semester);
-            Console.WriteLine(credits);
+            Console.WriteLine($"Course Name :{courseName}  {courseCode}");
+            Console.WriteLine($"Semester: {semester}");
+            Console.WriteLine($"Credits: {credits}");
             
         }
     }

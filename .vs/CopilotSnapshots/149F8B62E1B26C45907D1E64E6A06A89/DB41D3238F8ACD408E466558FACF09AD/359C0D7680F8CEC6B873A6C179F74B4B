@@ -11,7 +11,7 @@ namespace university_Project
     internal class Program
 
     {
-        
+
         public static string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "st.txt");
 
         static void Main(string[] args)
@@ -38,8 +38,8 @@ namespace university_Project
                     switch (role)
                     {
                         case 1:
-                            Admin admin = new Admin();
-                            admin.Start();
+                            //Admin admin = new Admin();
+                            //admin.AdminMenu();
                             Console.WriteLine("Admin-Login functionality is under development.");
                             break;
                         case 2:

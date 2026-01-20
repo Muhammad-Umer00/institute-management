@@ -11,9 +11,23 @@ namespace university_Project
         public string DepartmentName { get; set; }
         public string DepartmentCode { get; set; }
 
-        List<Course> courses = new List<Course>;
-        List<Facultymember> facultymembers = new List<Facultymember>();
+        public List<Course> courses = new List<Course>();
+        public List<Facultymember> facultymembers = new List<Facultymember>();
 
+        public void display()
+        {
+            Console.WriteLine($"Department Name : {DepartmentName}");
+            Console.WriteLine($"Department Code : {DepartmentName}");
+            Console.WriteLine("Faculty Members:");
+            foreach (var f in facultymembers)
+            {
+                Console.WriteLine(f.name);
+            }
+            foreach (var f in courses)
+            {
+                Console.WriteLine(f.courseName);
+            }
+        }
         public void addCourse(Course course)
         {
             courses.Add(course);
